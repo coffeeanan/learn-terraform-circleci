@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "app" {
     public_bucket = true
   }
 
-  bucket        = "${var.app}.${var.label}.${random_uuid.randomid.result}"
+  bucket        = "${var.app}.${var.label}.circle1"
   force_destroy = true
 }
 
